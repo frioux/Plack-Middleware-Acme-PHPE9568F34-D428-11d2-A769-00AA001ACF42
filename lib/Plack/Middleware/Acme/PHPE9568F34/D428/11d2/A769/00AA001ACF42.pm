@@ -47,6 +47,23 @@ sub call {
 
 1;
 
+=pod
+
+=head1 SYNOPSIS
+
+ builder {
+    enable 'Plack::Middleware::Acme::PHPE9568F34::D428::11d2::A769::00AA001ACF42';
+    $app;
+ }
+
+=head1 DESCRIPTION
+
+Who in the Perl community doesn't envy PHP's
+L<awesome features|http://phpsadness.com/?page=sad/11>?  This module will give
+you the features you've always hoped and dreamed for!
+
+=cut
+
 __DATA__
 __[ logo ]__
 R0lGODlheABDAOZqAH+CuDk3RyglKszN4qGky9PV57K01ENCWIOGuYKDs1JScpCSwsLE3qqs0ExLY1tc
