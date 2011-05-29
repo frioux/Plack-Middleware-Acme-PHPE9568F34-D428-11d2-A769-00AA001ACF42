@@ -22,8 +22,8 @@ sub sillies {
 
    (
       '=PHPE9568F34-D428-11d2-A769-00AA001ACF42' => $self->$get_image('logo'),
-      '=PHPE9568F35-D428-11d2-A769-00AA001ACF42' => $self->$get_image('child'),
-      '=PHPE9568F36-D428-11d2-A769-00AA001ACF42' => $self->$get_image('zend'),
+      '=PHPE9568F35-D428-11d2-A769-00AA001ACF42' => $self->$get_image('zend'),
+      '=PHPE9568F36-D428-11d2-A769-00AA001ACF42' => $self->$get_image('child'),
    )
 }
 
