@@ -16,7 +16,7 @@ my $get_image = sub {
    my $data = ${$self->section_data($section)};
    $data =~ s/^\s+//mg;
    $data =~ s/\s+$//mg;
-   decode_base64($data),
+   decode_base64($data)
 };
 
 sub sillies {
