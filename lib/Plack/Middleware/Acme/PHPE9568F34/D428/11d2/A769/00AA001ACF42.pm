@@ -8,8 +8,6 @@ use warnings;
 use MIME::Base64;
 use Data::Section -setup;
 
-my $data =
-
 my $get_image = sub {
    my ($self, $section) = @_;
 
