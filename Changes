@@ -2,6 +2,10 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+3.100000  2011-05-29 01:21:27 CST6CDT
+       - Fix Misspelled Content-Type header (Olivier Mengué)
+       - Images were backwards for a couple of the parameters, fixed (Olivier Mengué)
+
 3.000100  2011-05-27 21:43:09 CST6CDT
        - Initial Release
 
