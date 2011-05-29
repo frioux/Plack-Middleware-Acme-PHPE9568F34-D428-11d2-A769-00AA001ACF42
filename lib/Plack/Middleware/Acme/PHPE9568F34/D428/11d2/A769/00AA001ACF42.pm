@@ -8,15 +8,13 @@ use warnings;
 use MIME::Base64;
 use Data::Section -setup;
 
-my $data =
-
 my $get_image = sub {
    my ($self, $section) = @_;
 
    my $data = ${$self->section_data($section)};
    $data =~ s/^\s+//mg;
    $data =~ s/\s+$//mg;
-   decode_base64($data),
+   decode_base64($data)
 };
 
 sub sillies {
@@ -24,8 +22,8 @@ sub sillies {
 
    (
       '=PHPE9568F34-D428-11d2-A769-00AA001ACF42' => $self->$get_image('logo'),
-      '=PHPE9568F35-D428-11d2-A769-00AA001ACF42' => $self->$get_image('child'),
-      '=PHPE9568F36-D428-11d2-A769-00AA001ACF42' => $self->$get_image('zend'),
+      '=PHPE9568F35-D428-11d2-A769-00AA001ACF42' => $self->$get_image('zend'),
+      '=PHPE9568F36-D428-11d2-A769-00AA001ACF42' => $self->$get_image('child'),
    )
 }
 
@@ -37,7 +35,7 @@ sub call {
    my %responses = $self->sillies;
    if (my $ret = $responses{$env->{QUERY_STRING}}) {
       return [ 200, [
-        'Contet-Type' => 'image/gif',
+        'Content-Type' => 'image/gif',
         'X-PHP-SUX' => '1',
       ], [ $ret ] ]
    } else {
