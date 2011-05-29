@@ -37,7 +37,7 @@ sub call {
    my %responses = $self->sillies;
    if (my $ret = $responses{$env->{QUERY_STRING}}) {
       return [ 200, [
-        'Contet-Type' => 'image/gif',
+        'Content-Type' => 'image/gif',
         'X-PHP-SUX' => '1',
       ], [ $ret ] ]
    } else {
