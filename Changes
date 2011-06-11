@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+       - Add a useless tests so I stop getting stupid emails
 
 3.100000  2011-05-29 01:21:27 CST6CDT
        - Fix Misspelled Content-Type header (Olivier Mengué)
